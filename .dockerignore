@@ -1,0 +1,15 @@
+.git
+
+env/
+*.mp4
+*.pyc
+!processing.mp4
+
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
