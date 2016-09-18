@@ -29,7 +29,7 @@ For rabbitmq, see [these instructions](http://docs.celeryproject.org/en/latest/g
 
 Run the server with:
 ```
-python server.js
+python server.py
 ```
 or, using uswgi
 ```
@@ -57,5 +57,3 @@ $.ajax({
   dataType: "json"
 });
 ```
-
-

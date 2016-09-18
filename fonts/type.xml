@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE typemap [
+<!ELEMENT typemap (type)+>
+<!ELEMENT type (#PCDATA)>
+<!ELEMENT include (#PCDATA)>
+<!ATTLIST type name CDATA #REQUIRED>
+<!ATTLIST type fullname CDATA #IMPLIED>
+<!ATTLIST type family CDATA #IMPLIED>
+<!ATTLIST type foundry CDATA #IMPLIED>
+<!ATTLIST type weight CDATA #IMPLIED>
+<!ATTLIST type style CDATA #IMPLIED>
+<!ATTLIST type stretch CDATA #IMPLIED>
+<!ATTLIST type format CDATA #IMPLIED>
+<!ATTLIST type metrics CDATA #IMPLIED>
+<!ATTLIST type glyphs CDATA #REQUIRED>
+<!ATTLIST type version CDATA #IMPLIED>
+<!ATTLIST include file CDATA #REQUIRED>
+]>
+<typemap>
+
+  <type
+     format="ttf"
+     name="Bangers"
+     fullname="Bangers"
+     family="Bangers"
+     glyphs="/opt/app/fonts/Bangers/regular.ttf"
+     />
+
+  <type
+     format="ttf"
+     name="CodaH"
+     fullname="Coda Heavy"
+     family="Coda"
+     glyphs="/opt/app/fonts/Coda/bold.ttf"
+     />
+
+  <type
+     format="ttf"
+     name="Coda"
+     fullname="Coda"
+     family="Coda"
+     glyphs="/opt/app/fonts/Coda/regular.ttf"
+     />
+
+  <type
+     format="ttf"
+     name="CoveredByYourGrace"
+     fullname="Covered By Your Grace"
+     family="Covered By Your Grace"
+     glyphs="/opt/app/fonts/Covered_By_Your_Grace/regular.ttf"
+     />
+
+  <type
+     format="ttf"
+     name="FredokaOne"
+     fullname="Fredoka One"
+     family="Fredoka One"
+     glyphs="/opt/app/fonts/Fredoka_One/regular.ttf"
+     />
+
+  <type
+     format="ttf"
+     name="GentiumBookBasicB"
+     fullname="Gentium Book Basic Bold"
+     family="Gentium Book Basic"
+     glyphs="/opt/app/fonts/Gentium_Book_Basic/bold.ttf"
+     />
+
+  <type
+     format="ttf"
+     name="GentiumBookBasicBI"
+     fullname="Gentium Book Basic Bold Italic"
+     family="Gentium Book Basic"
+     glyphs="/opt/app/fonts/Gentium_Book_Basic/bolditalic.ttf"
+     />
+
+  <type
+     format="ttf"
+     name="GentiumBookBasicI"
+     fullname="Gentium Book Basic Italic"
+     family="Gentium Book Basic"
+     glyphs="/opt/app/fonts/Gentium_Book_Basic/italic.ttf"
+     />
+
+  <type
+     format="ttf"
+     name="GentiumBookBasic"
+     fullname="Gentium Book Basic"
+     family="Gentium Book Basic"
+     glyphs="/opt/app/fonts/Gentium_Book_Basic/regular.ttf"
+     />
+
+  <type
+     format="ttf"
+     name="GravitasOne"
+     fullname="Gravitas One"
+     family="Gravitas One"
+     glyphs="/opt/app/fonts/Gravitas_One/regular.ttf"
+     />
+
+  <type
+     format="ttf"
+     name="LatoB"
+     fullname="Lato Bold"
+     family="Lato"
+     glyphs="/opt/app/fonts/Lato/bold.ttf"
+     />
+
+  <type
+     format="ttf"
+     name="LatoBI"
+     fullname="Lato Bold Italic"
+     family="Lato"
+     glyphs="/opt/app/fonts/Lato/bolditalic.ttf"
+     />
+
+  <type
+     format="ttf"
+     name="LatoI"
+     fullname="Lato Italic"
+     family="Lato"
+     glyphs="/opt/app/fonts/Lato/italic.ttf"
+     />
+
+  <type
+     format="ttf"
+     name="Lato"
+     fullname="Lato Regular"
+     family="Lato"
+     glyphs="/opt/app/fonts/Lato/regular.ttf"
+     />
+
+  <type
+     format="ttf"
+     name="MerriweatherB"
+     fullname="Merriweather Bold"
+     family="Merriweather"
+     glyphs="/opt/app/fonts/Merriweather/bold.ttf"
+     />
+
+  <type
+     format="ttf"
+     name="MerriweatherBI"
+     fullname="Merriweather Bold Italic"
+     family="Merriweather"
+     glyphs="/opt/app/fonts/Merriweather/bolditalic.ttf"
+     />
+
+  <type
+     format="ttf"
+     name="MerriweatherI"
+     fullname="Merriweather Italic"
+     family="Merriweather"
+     glyphs="/opt/app/fonts/Merriweather/italic.ttf"
+     />
+
+  <type
+     format="ttf"
+     name="Merriweather"
+     fullname="Merriweather"
+     family="Merriweather"
+     glyphs="/opt/app/fonts/Merriweather/regular.ttf"
+     />
+
+  <type
+     format="ttf"
+     name="OpenSansB"
+     fullname="Open Sans Bold"
+     family="Open Sans"
+     glyphs="/opt/app/fonts/Open_Sans/bold.ttf"
+     />
+
+  <type
+     format="ttf"
+     name="OpenSansBI"
+     fullname="Open Sans Bold Italic"
+     family="Open Sans"
+     glyphs="/opt/app/fonts/Open_Sans/bolditalic.ttf"
+     />
+
+  <type
+     format="ttf"
+     name="OpenSansI"
+     fullname="Open Sans Italic"
+     family="Open Sans"
+     glyphs="/opt/app/fonts/Open_Sans/italic.ttf"
+     />
+
+  <type
+     format="ttf"
+     name="OpenSans"
+     fullname="Open Sans"
+     family="Open Sans"
+     glyphs="/opt/app/fonts/Open_Sans/regular.ttf"
+     />
+
+  <type
+     format="ttf"
+     name="PTSansB"
+     fullname="PT Sans Bold"
+     family="PT Sans"
+     glyphs="/opt/app/fonts/PT_Sans/bold.ttf"
+     />
+
+  <type
+     format="ttf"
+     name="PTSansBI"
+     fullname="PT Sans Bold Italic"
+     family="PT Sans"
+     glyphs="/opt/app/fonts/PT_Sans/bolditalic.ttf"
+     />
+
+  <type
+     format="ttf"
+     name="PTSansI"
+     fullname="PT Sans Italic"
+     family="PT Sans"
+     glyphs="/opt/app/fonts/PT_Sans/italic.ttf"
+     />
+
+  <type
+     format="ttf"
+     name="PTSans"
+     fullname="PT Sans"
+     family="PT Sans"
+     glyphs="/opt/app/fonts/PT_Sans/regular.ttf"
+     />
+
+  <type
+     format="ttf"
+     name="VollkornB"
+     fullname="Vollkorn Bold"
+     family="Vollkorn Bold"
+     glyphs="/opt/app/fonts/Vollkorn/bold.ttf"
+     />
+
+  <type
+     format="ttf"
+     name="VollkornBI"
+     fullname="Vollkorn Bold Italic"
+     family="Vollkorn Bold Italic"
+     glyphs="/opt/app/fonts/Vollkorn/bolditalic.ttf"
+     />
+
+  <type
+     format="ttf"
+     name="VollkornI"
+     fullname="Vollkorn Italic"
+     family="Vollkorn Italic"
+     glyphs="/opt/app/fonts/Vollkorn/italic.ttf"
+     />
+
+  <type
+     format="ttf"
+     name="Vollkorn"
+     fullname="Vollkorn Regular"
+     family="Vollkorn Regular"
+     glyphs="/opt/app/fonts/Vollkorn/regular.ttf"
+     />
+
+</typemap>

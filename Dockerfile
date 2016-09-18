@@ -21,24 +21,22 @@ RUN echo 'deb http://www.rabbitmq.com/debian/ testing main' | tee /etc/apt/sourc
 RUN wget -O- https://www.rabbitmq.com/rabbitmq-release-signing-key.asc | apt-key add -
 RUN apt-get update && apt-get install -y --force-yes --no-install-recommends rabbitmq-server
 
-# RUN curl -L http://johnvansickle.com/ffmpeg/releases/ffmpeg-release-64bit-static.tar.xz | tar -xJ \
-  # && ln -s /ffmpeg-*/ffm* /usr/bin
-
 COPY requirements.txt /tmp
 RUN pip install -r /tmp/requirements.txt
 
+COPY  ./fonts/type.xml /etc/ImageMagick-6/type.xml
 COPY . /opt/app
 WORKDIR /opt/app
 
-RUN apt-get remove -y \
-  python-pip \
-  curl \
-  xz-utils \
-  && rm -Rf /tmp/* \
-  && rm -rf /var/lib/apt/lists/*
+# RUN apt-get remove -y \
+#   python-pip \
+#   curl \
+#   xz-utils \
+#   && rm -Rf /tmp/* \
+#   && rm -rf /var/lib/apt/lists/*
 
 ENV C_FORCE_ROOT=true
 ENV CELERY_ACCEPT_CONTENT="['pickle', 'json', 'msgpack', 'yaml']"
 
 EXPOSE 5000
-CMD ./run.sh
+# CMD ./run.sh
