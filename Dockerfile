@@ -24,7 +24,8 @@ RUN apt-get update && apt-get install -y --force-yes --no-install-recommends rab
 COPY requirements.txt /tmp
 RUN pip install -r /tmp/requirements.txt
 
-COPY  ./fonts/type.xml /etc/ImageMagick-6/type.xml
+COPY ./etc/ImageMagick-6/type.xml /etc/ImageMagick-6/type.xml
+COPY ./etc/ImageMagick-6/policy.xml /etc/ImageMagick-6/policy.xml
 COPY . /opt/app
 WORKDIR /opt/app
 
@@ -37,6 +38,7 @@ WORKDIR /opt/app
 
 ENV C_FORCE_ROOT=true
 ENV CELERY_ACCEPT_CONTENT="['pickle', 'json', 'msgpack', 'yaml']"
+ENV IMAGEMAGICK_BINARY /usr/bin/convert
 
 EXPOSE 5000
-# CMD ./run.sh
+CMD ./run.sh
