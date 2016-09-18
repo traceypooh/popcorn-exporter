@@ -37,5 +37,8 @@ RUN apt-get remove -y \
   && rm -Rf /tmp/* \
   && rm -rf /var/lib/apt/lists/*
 
+ENV C_FORCE_ROOT=true
+ENV CELERY_ACCEPT_CONTENT="['pickle', 'json', 'msgpack', 'yaml']"
+
 EXPOSE 5000
 CMD ./run.sh
