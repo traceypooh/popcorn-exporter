@@ -24,10 +24,11 @@ RUN apt-get update && apt-get install -y --force-yes --no-install-recommends rab
 # RUN curl -L http://johnvansickle.com/ffmpeg/releases/ffmpeg-release-64bit-static.tar.xz | tar -xJ \
   # && ln -s /ffmpeg-*/ffm* /usr/bin
 
+COPY requirements.txt /tmp
+RUN pip install -r /tmp/requirements.txt
+
 COPY . /opt/app
 WORKDIR /opt/app
-
-RUN pip install -r requirements.txt
 
 RUN apt-get remove -y \
   python-pip \
@@ -35,3 +36,6 @@ RUN apt-get remove -y \
   xz-utils \
   && rm -Rf /tmp/* \
   && rm -rf /var/lib/apt/lists/*
+
+EXPOSE 5000
+CMD ./run.sh
