@@ -24,6 +24,9 @@ RUN apt-get update \
   xz-utils \
   rabbitmq-server
 
+RUN curl -L http://johnvansickle.com/ffmpeg/releases/ffmpeg-release-64bit-static.tar.xz | tar -xJ \
+  && ln -s /ffmpeg-*/ffm* /usr/bin
+
 COPY requirements.txt /tmp
 RUN pip install -r /tmp/requirements.txt
 
