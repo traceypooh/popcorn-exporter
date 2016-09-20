@@ -1,0 +1,143 @@
+{
+  "id": "Media0",
+  "name": "Media0",
+  "url": "#t=,30",
+  "target": "video",
+  "duration": 30,
+  "popcornOptions": {
+    "frameAnimation": true
+  },
+  "controls": true,
+  "tracks": [
+    {
+      "name": "",
+      "id": "2",
+      "order": 0,
+      "trackEvents": [
+        {
+          "id": "TrackEvent2",
+          "type": "text",
+          "popcornOptions": {
+            "start": 1.5896739130434783,
+            "end": 8.070652173913043,
+            "target": "video-container",
+            "left": 20.37037037037037,
+            "top": 71.52606310013716,
+            "text": "Popcorn Maker",
+            "linkUrl": "",
+            "linkTarget": "_blank",
+            "position": "custom",
+            "alignment": "left",
+            "transition": "popcorn-fade",
+            "fontFamily": "Merriweather",
+            "fontSize": 10,
+            "fontColor": "#000000",
+            "shadow": false,
+            "shadowColor": "#444444",
+            "background": false,
+            "backgroundColor": "#888888",
+            "fontDecorations": {
+              "bold": false,
+              "italics": false
+            },
+            "width": 50,
+            "zindex": 1000,
+            "id": "TrackEvent2"
+          },
+          "track": "2",
+          "name": "TrackEvent2"
+        }
+      ]
+    },
+    {
+      "name": "",
+      "id": "1",
+      "order": 1,
+      "trackEvents": [
+        {
+          "id": "TrackEvent1",
+          "type": "sequencer",
+          "popcornOptions": {
+            "start": 4.156971807065218,
+            "end": 9.490971807065218,
+            "source": [
+              "https://archive.org/download/electricsheep-flock-244-32500-0/00244=32650=23652=23646.mp4?butteruid=1474200232417"
+            ],
+            "fallback": "",
+            "denied": false,
+            "from": 0,
+            "title": "electricsheep-flock-244-32500-0",
+            "type": "Archive",
+            "thumbnailSrc": "https://archive.org/download/electricsheep-flock-244-32500-0/electricsheep-flock-244-32500-0.thumbs/00244=32650=23652=23646_000005.jpg",
+            "duration": 5.334,
+            "linkback": "https://archive.org/details/electricsheep-flock-244-32500-0",
+            "contentType": "",
+            "hidden": false,
+            "target": "video-container",
+            "width": 62.34567901234568,
+            "height": 66.94101508916323,
+            "top": 0,
+            "left": 0,
+            "volume": 100,
+            "mute": false,
+            "zindex": 999,
+            "id": "TrackEvent1"
+          },
+          "track": "1",
+          "name": "TrackEvent1"
+        }
+      ]
+    },
+    {
+      "name": "",
+      "id": "0",
+      "order": 2,
+      "trackEvents": [
+        {
+          "id": "TrackEvent0",
+          "type": "sequencer",
+          "popcornOptions": {
+            "start": 0,
+            "end": 5.334,
+            "source": [
+              "https://archive.org/download/electricsheep-flock-244-32500-0/00244=32650=23652=23646.mp4?butteruid=1474200232416"
+            ],
+            "fallback": "",
+            "denied": false,
+            "from": 0,
+            "title": "electricsheep-flock-244-32500-0",
+            "type": "Archive",
+            "thumbnailSrc": "https://archive.org/download/electricsheep-flock-244-32500-0/electricsheep-flock-244-32500-0.thumbs/00244=32650=23652=23646_000005.jpg",
+            "duration": 5.334,
+            "linkback": "https://archive.org/details/electricsheep-flock-244-32500-0",
+            "contentType": "",
+            "hidden": false,
+            "target": "video-container",
+            "width": 63.95061728395062,
+            "height": 56.18655692729767,
+            "top": 43.81344307270233,
+            "left": 36.04938271604938,
+            "volume": 100,
+            "mute": false,
+            "zindex": 998,
+            "id": "TrackEvent0"
+          },
+          "track": "0",
+          "name": "TrackEvent0"
+        }
+      ]
+    }
+  ],
+  "clipData": {
+    "https://archive.org/download/electricsheep-flock-244-32500-0/00244=32650=23652=23646.mp4": {
+      "source": "https://archive.org/download/electricsheep-flock-244-32500-0/00244=32650=23652=23646.mp4",
+      "type": "Archive",
+      "title": "electricsheep-flock-244-32500-0",
+      "thumbnail": "https://archive.org/download/electricsheep-flock-244-32500-0/electricsheep-flock-244-32500-0.thumbs/00244=32650=23652=23646_000005.jpg",
+      "linkback": "https://archive.org/details/electricsheep-flock-244-32500-0",
+      "duration": 5.334
+    }
+  },
+  "currentTime": 6.807065217391305,
+  "backgroundColor": "#ff2424"
+}

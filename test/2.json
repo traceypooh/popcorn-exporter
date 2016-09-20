@@ -1,0 +1,104 @@
+{
+  "id": "Media0",
+  "name": "Media0",
+  "url": "#t=,231",
+  "target": "video",
+  "duration": 231,
+  "popcornOptions": {
+    "frameAnimation": true
+  },
+  "controls": true,
+  "tracks": [
+    {
+      "name": "",
+      "id": "1",
+      "order": 0,
+      "trackEvents": [
+        {
+          "id": "TrackEvent1",
+          "type": "text",
+          "popcornOptions": {
+            "start": 2.9212719298245613,
+            "end": 38.584429824561404,
+            "target": "video-container",
+            "left": 28.84822389666308,
+            "top": 77.0511900490372,
+            "text": "Popcorn Maker",
+            "linkUrl": "",
+            "linkTarget": "_blank",
+            "position": "custom",
+            "alignment": "left",
+            "transition": "popcorn-fade",
+            "fontFamily": "Merriweather",
+            "fontSize": 10,
+            "fontColor": "#fc4bfa",
+            "shadow": false,
+            "shadowColor": "#444444",
+            "background": false,
+            "backgroundColor": "#888888",
+            "fontDecorations": {
+              "bold": false,
+              "italics": false
+            },
+            "width": 50.05382131324004,
+            "zindex": 1000,
+            "id": "TrackEvent1"
+          },
+          "track": "1",
+          "name": "TrackEvent1"
+        }
+      ]
+    },
+    {
+      "name": "",
+      "id": "0",
+      "order": 1,
+      "trackEvents": [
+        {
+          "id": "TrackEvent0",
+          "type": "sequencer",
+          "popcornOptions": {
+            "start": 0,
+            "end": 217,
+            "source": [
+              "http://www.youtube.com/watch?v=QH2-TGUlwu4&butteruid=1474395265528"
+            ],
+            "fallback": "",
+            "denied": false,
+            "from": 0,
+            "title": "Nyan Cat [original]",
+            "type": "YouTube",
+            "thumbnailSrc": "https://i.ytimg.com/vi/QH2-TGUlwu4/default.jpg",
+            "duration": 217,
+            "linkback": "",
+            "contentType": "",
+            "hidden": false,
+            "target": "video-container",
+            "width": 100,
+            "height": 100,
+            "top": 0,
+            "left": 0,
+            "volume": 100,
+            "mute": false,
+            "zindex": 999,
+            "id": "TrackEvent0"
+          },
+          "track": "0",
+          "name": "TrackEvent0"
+        }
+      ]
+    }
+  ],
+  "clipData": {
+    "http://www.youtube.com/watch?v=QH2-TGUlwu4": {
+      "source": "http://www.youtube.com/watch?v=QH2-TGUlwu4",
+      "title": "Nyan Cat [original]",
+      "type": "YouTube",
+      "thumbnail": "https://i.ytimg.com/vi/QH2-TGUlwu4/default.jpg",
+      "author": "SARA JUNE",
+      "duration": 217
+    }
+  },
+  "currentTime": 33.56899999999838,
+  "backgroundColor": "#FFFFFF"
+}
