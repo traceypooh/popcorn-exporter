@@ -220,4 +220,4 @@ def convert(data, outfile='composition.mp4'):
 if __name__ == '__main__':
     with open(sys.argv[1], 'rb') as infile:
         data = json.load(infile)
-        convert(data)
+        convert(data, outfile=sys.argv[2])
