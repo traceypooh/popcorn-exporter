@@ -8,6 +8,7 @@ import moviepy.editor as mpy
 import requests
 import shutil
 from hashids import Hashids
+from goldfinch import validFileName as vfn
 
 
 '''
@@ -31,7 +32,8 @@ HEIGHT = 720
 def filename_from_url(url):
     ''' Converts a url into a friendlier file name'''
 
-    return 'cache/' + re.sub(r'://|/', '_', url)
+    # return 'cache/' + re.sub(r'://|/', '_', url)
+    return 'cache/' + vfn(url)
 
 
 def download_video(url):
@@ -136,7 +138,7 @@ def create_clip(cliptype, options):
         return clip
 
     elif cliptype == 'image':
-        source = download_asset(options["src"])
+        source = download_file(options["src"])
         global_start = float(options['start'])
         global_end = float(options['end'])
         duration = global_end - global_start
@@ -155,7 +157,7 @@ def create_clip(cliptype, options):
         font = options['fontFamily']
         alignment = {'left': 'West', 'center': 'center', 'right': 'East'}[options['alignment']]
 
-        text = options['text']
+        text = options['text'].encode('utf-8')
         options['height'] = options['fontSize']
         width, height, x, y = get_dimensions(options)
 
