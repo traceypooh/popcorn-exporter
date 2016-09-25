@@ -155,11 +155,13 @@ def create_clip(cliptype, options):
         global_end = float(options['end'])
         duration = global_end - global_start
         font = options['fontFamily']
-        alignment = {'left': 'West', 'center': 'center', 'right': 'East'}[options['alignment']]
+        alignment = {'left': 'NorthWest', 'center': 'center', 'right': 'NorthEast'}[options['alignment']]
 
         text = options['text'].encode('utf-8')
         options['height'] = options['fontSize']
         width, height, x, y = get_dimensions(options)
+        if not alignment == 'center':
+            height = HEIGHT - y
 
         clip = mpy.TextClip(
             txt=text,
@@ -167,7 +169,8 @@ def create_clip(cliptype, options):
             method='caption',
             color=options['fontColor'],
             align=alignment,
-            font=font
+            font=font,
+            fontsize= HEIGHT * options['fontSize'] / 100
         )
 
         clip = clip.set_duration(duration).set_start(global_start).set_pos((x, y))
@@ -222,4 +225,19 @@ def convert(data, outfile='composition.mp4'):
 if __name__ == '__main__':
     with open(sys.argv[1], 'rb') as infile:
         data = json.load(infile)
+
+        if 'media' in data:
+            data['media'][0]['backgroundColor'] = data['background']
+            data = data['media'][0]
+
+        lastEnd = 0
+        for t in data['tracks']:
+            for e in t['trackEvents']:
+                lastEnd = max(lastEnd, e['popcornOptions']['end'])
+
+        if lastEnd == 0:
+            lastEnd = data['duration']
+
+        data['duration'] = lastEnd
+
         convert(data, outfile=sys.argv[2])
