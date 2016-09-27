@@ -227,7 +227,9 @@ if __name__ == '__main__':
         data = json.load(infile)
 
         if 'media' in data:
-            data['media'][0]['backgroundColor'] = data['background']
+            if 'background' in data:
+                data['media'][0]['backgroundColor'] = data['background']
+            
             data = data['media'][0]
 
         lastEnd = 0
