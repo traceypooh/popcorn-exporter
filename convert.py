@@ -84,7 +84,7 @@ def download_asset(url):
     print 'URL', url
 
     ext = url.split('.')[-1].lower()
-    if ext in ['jpeg', 'jpg', 'gif', 'png']:
+    if ext in ['jpeg', 'jpg', 'gif', 'png', 'svg']:
         filename = download_file(url)
     else:
         filename = download_video(url)
@@ -149,6 +149,14 @@ def create_clip(cliptype, options):
         duration = global_end - global_start
 
         width, height, x, y = get_dimensions(options)
+        if width == 0:
+            width = 1
+        if height == 0:
+            height = 1
+
+        ext = source.split('.')[-1].lower()
+        if ext in ['svg']:
+            source = "http://www.msss.com/moc_gallery/broken_icon.jpg"
 
         clip = mpy.ImageClip(source).set_duration(duration).set_start(global_start)
         clip = clip.resize((width, height)).set_pos((x, y))
