@@ -4,6 +4,7 @@ import time
 import re
 import subprocess
 import os
+import os.path
 import moviepy.editor as mpy
 import requests
 import shutil
@@ -50,7 +51,11 @@ def download_video(url):
 
     try:
         subprocess.check_output(args)
-        return filename
+        if os.path.exists(filename):
+            return filename
+        else:
+            filename += '.mp4'
+            return filename
     except Exception as e:
         return None
 
