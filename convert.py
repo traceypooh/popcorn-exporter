@@ -158,7 +158,7 @@ def create_clip(cliptype, options):
         alignment = {'left': 'NorthWest', 'center': 'center', 'right': 'NorthEast'}[options['alignment']]
 
         text = options['text'].encode('utf-8')
-        options['height'] = options['fontSize']
+        options['height'] = int(options['fontSize'])
         width, height, x, y = get_dimensions(options)
         if not alignment == 'center':
             height = HEIGHT - y
@@ -170,7 +170,7 @@ def create_clip(cliptype, options):
             color=options['fontColor'],
             align=alignment,
             font=font,
-            fontsize= HEIGHT * options['fontSize'] / 100
+            fontsize= HEIGHT * int(options['fontSize']) / 100
         )
 
         clip = clip.set_duration(duration).set_start(global_start).set_pos((x, y))
@@ -229,7 +229,7 @@ if __name__ == '__main__':
         if 'media' in data:
             if 'background' in data:
                 data['media'][0]['backgroundColor'] = data['background']
-            
+
             data = data['media'][0]
 
         lastEnd = 0
