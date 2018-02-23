@@ -21,7 +21,7 @@ six==1.10.0
 tqdm==4.8.4
 uWSGI==2.0.13.1
 wsgiref==0.1.2
-youtube-dl==2016.8.22
+youtube-dl
 goldfinch==0.4
 # moviepy==0.2.2.11
 git+https://github.com/Laurian/moviepy@popcorn-exporter
